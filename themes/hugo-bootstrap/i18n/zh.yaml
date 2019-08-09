@@ -1,0 +1,30 @@
+- id: by
+  translation: 由
+
+- id: tags
+  translation: 标签
+
+- id: categories
+  translation: 分类
+
+- id: readMore
+  translation: 阅读更多 →
+
+- id: translations
+  translation: 翻译
+
+- id: related
+  translation: 相关文章
+
+- id: recentPosts
+  translation: 最新文章
+
+- id: backToTop
+  translation: 回到头部
+
+- id: language
+  translation: 语言
+
+- id: thanks
+  translation: "Powered by Hugo | Theme - Bootstrap"
+

@@ -1,0 +1,16 @@
+
+{{ define "main" }}
+    <main>
+        {{ .Content }}
+        <ul class="contents">
+            {{ range .Paginator.Pages }}
+                <li><h5 class="blog-post-title">
+                        <a class="text-dark" href="{{ .Params.projectUrl }}">{{ .Title | markdownify }}</a>
+                    </h5>
+                        {{ partial "summary.html" . }}
+                </li>
+            {{ end }}
+        </ul>
+        {{ partial "paginator.html" . }}
+    </main>
+{{ end }}

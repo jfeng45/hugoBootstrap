@@ -1,0 +1,17 @@
+<article class="blog-post">
+    <header>
+        {{ partial "post-title" . }}
+        {{ partial "post-date" . }}
+        {{ partial "post-tags" . }}
+        {{ partial "post-categories" . }}
+    </header>
+    {{ if .Description }}
+        {{ .Description }}
+    {{else}}
+        {{ .Summary }}
+    {{ end }}
+    {{ if .Truncated }}
+    <p></p>
+    <a href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
+    {{ end }}
+</article>

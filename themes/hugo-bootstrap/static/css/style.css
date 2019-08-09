@@ -1,0 +1,52 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#container {
+    min-height:100%;
+    position:relative;
+}
+
+#body {
+    padding:10px;
+    padding-bottom:60px;   /* Height of the footer */
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.blog-header, .blog-post, .blog-pagination {
+  margin-bottom: 0.4rem;
+}
+
+/* Make sure the image size is reasonable. */
+.blog-post img {
+  max-width: 100%;
+}
+
+/*
+ * Footer
+ */
+.blog-footer-bs {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+
+}
+.blog-footer-bs p:last-child {
+  margin-bottom: 0;
+}
+
+.blog-post-title-jf {
+    margin-bottom: .25rem;
+    font-size: 0.5rem;
+}
+

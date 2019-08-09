@@ -1,0 +1,99 @@
+baseurl = "https://jfeng45.github.io"
+# title = "Software Craftsman"
+# title = "siteTitle"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+hasCJKLanguage = true
+
+# Pagination
+paginate = 5
+paginatePath = "page"
+
+# Theme to use
+theme = "hugo-bootstrap"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Google analytics
+# googleAnalytics = ""
+
+[languages.en]
+  contentDir= "content/en"
+  languageName = "English"
+  siteTitle = "Software Craftsman"
+  author = "Jin Feng"
+
+  # Replace the default footer message with a localized message
+  #copyright = "Hugo template made with by Jin Feng"
+
+  [[languages.en.menu.main]]
+    url = "/posts"
+    name = "Home"
+    weight = 1
+  [[languages.en.menu.main]]
+    url = "/posts"
+    name = "Posts"
+    weight = 2
+  [[languages.en.menu.main]]
+    url = "/project/"
+    name = "Project"
+    weight = 3
+
+[languages.zh]
+  contentDir= "content/zh/"
+  languageName = "中文"
+  siteTitle = "码农工匠"
+  author = "冯进"
+
+  [[languages.zh.menu.main]]
+    url = "/zh/"
+    name = "首页"
+    weight = 1
+  [[languages.zh.menu.main]]
+    url = "/posts"
+    name = "文章"
+    weight = 2
+  [[languages.zh.menu.main]]
+    url = "/project/"
+    name = "项目"
+    weight = 3
+
+
+# Links format
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+[params]
+  # Main sections (currently used for the recent posts in the sidebar)
+  mainSections = ["posts"]
+  siteTitle = "aaa"
+
+  # Default author
+  author = "Jin Feng"
+
+  # Date format (default: Jan 2, 2006)
+  date_format = "2006-01-02"
+
+  # Display post summaries instead of content in list templates (default: true)
+  # truncate = false
+
+  [params.sidebar]
+    # Whether to show the recent posts or not (default: true)
+    # showRecent = false
+
+    # Whether to show the taxonomies or not (default: true)
+    # showTaxonomy = false
+
+    # How many posts to show on the sidebar (Default: 5)
+     num_recent_posts = 10
+
+  [params.header]
+    # Color scheme for the header (default: "light")
+    # colorScheme = "dark"
+
+  [params.footer]
+    # Color scheme for the footer (default: "light")
+    # colorScheme = "dark"

@@ -1,0 +1,9 @@
+<article class="blog-post">
+    <header>
+        {{ partial "post-date" . }}
+    </header>
+    {{  .Summary  }}
+    {{ if .Truncated }}
+    <a href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
+    {{ end }}
+</article>
