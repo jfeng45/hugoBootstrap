@@ -8,7 +8,7 @@ tags: ["Golang", "Grpc", "清晰架构"]
 categories: ["Go微服务"]
 
 
-canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-application-design-68f48802c8f"
+# canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-application-design-68f48802c8f"
 
 description: "描述了Go微服务gRPC项目的清晰架构设计，以及该项目的三个业务层。 它还谈到了这个项目与清晰架构（Clean Architecture）不同的两个地方"
 
@@ -116,7 +116,7 @@ type UserDataInterface interface {
 <br/>
 
 
-以下是“UserDataInterface”中MySql实现“insert”功能的代码。 这里我使用“gdbc.SqlGdbc”接口作为数据库处理程序的封装以支持事务。 “gdbc.SqlGdbc”接口的具体实现可以是sql.DB（不支持事务）或sql.Tx（支持事务）。 通过“UserDataSql”结构传入函数作为接收者，使“Insert（）”函数对事务变得透明。 在“insert”函数中，它首先从“UserDataSql”获取数据库句柄，然后创建预处理语句（Prepared statement）并执行它; 最后它获取插入的id并将其返回给调用函数。
+以下是“UserDataInterface”中MySql实现“insert”功能的代码。 这里我使用“gdbc.SqlGdbc”接口作为数据库处理程序的封装以支持事务。 “gdbc.SqlGdbc”接口的具体实现可以是sql.DB（不支持事务）或sql.Tx（支持事务）。 通过“UserDataSql”结构传入函数作为接收者，使“Insert（）”函数对事务变得透明。 在“insert”函数中，它首先从“UserDataSql”获取数据库链接，然后创建预处理语句（Prepared statement）并执行它; 最后它获取插入的id并将其返回给调用函数。
 
 {{< highlight go "linenos=table,linenostart=1" >}}
 // UserDataSql is the SQL implementation of UserDataInterface

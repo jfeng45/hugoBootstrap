@@ -6,7 +6,7 @@ draft: false
 tags: ["Golang", "日志管理", "错误处理", “微服务”]
 categories: ["Go微服务"]
 
-canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-application-logging-b43dc5839bce"
+# canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-application-logging-b43dc5839bce"
 description: “描述了Go Microservice 和gRPC项目中日志管理和错误处理的最佳实践，并比较了两种不同的
              记录库ZAP和Logrus。“
 
@@ -29,7 +29,7 @@ description: “描述了Go Microservice 和gRPC项目中日志管理和错误�
 ##### **资源句柄：为什么日志记录与数据库不同**
 <br/>
    
-当应用程序需要处理外部资源时，例如数据库，文件系统，网络连接， SMTP服务器时，它通常需要一个资源句柄（Resource Handler）。在依赖注入中，容器创建一个资源句柄并将其注入每个业务函数，因此它可以使用资源句柄来访问底层资源。在此应用程序中，资源句柄是一个接口，因此业务层不会直接依赖于资源句柄的任何具体实现。数据库和gRPC连接都以这种方式处理。
+当应用程序需要处理外部资源时，例如数据库，文件系统，网络连接， SMTP服务器时，它通常需要一个资源句柄（Resource Handler）。在依赖注入中，容器创建一个资源句柄并将其注入每个业务函数，因此它可以使用资源句柄来访问底层资源。在此应用程序中，资源句柄是一个接口，因此业务层不会直接依赖于资源句柄的任何具体实现。数据库和gRPC链接都以这种方式处理。
    
 但是，日志记录器稍有不同，因为几乎每个函数都需要它，但数据库不是。在Java中，我们为每个Java类初始化一个记录器（Logger）实例。 Java日志记录框架使用层次关系来管理不同的记录器，因此它们从父日志记录器继承相同的日志配置。在Go中，不同的记录器之间没有层次关系，因此您要么创建一个记录器，要么具有许多彼此不相关的不同记录器。为了获得一致的日志记录配置，最好创建一个全局记录器并将其注入每个函数。但者将需要做很多工作，所以我决定在一个中心位置创建一个全局记录器，每个函数可以直接引用它。
    

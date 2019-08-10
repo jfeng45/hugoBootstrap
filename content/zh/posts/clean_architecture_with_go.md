@@ -7,7 +7,7 @@ draft: true
 tags: ["Golang", "Grpc", "清晰架构", “微服务”]
 categories: ["Go微服务"]
 
-canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-a08fa916a5db"
+# canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-a08fa916a5db"
 
 description: “我写了一系列关于用清晰架构（Clean Architecture）和SOLID设计Go Microservice和gRPC 的文章。它讨论了应用程序设计，应用程序布局和项目结构，日志记录，错误处理，事务管理，应用程序容器（Application Container）和依赖注入（Dependency Injection）。“ 
 ---
