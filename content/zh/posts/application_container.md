@@ -13,9 +13,9 @@ categories: ["Go微服务"]
 description: "程序容器（Application Container）负责创建具体类型并将它们注入每个函数。 它是本程序中最复杂的部分"
 
 ---
-清晰架构（Clean Atchitecture）的一个理念是隔离程序的框架，使框架不会接管您的应用程序，而是由您决定何时何地使用它们。在本程序中，我特意不在开始时使用任何框架，因此我可以更好地控制程序结构。只有在整个程序结构布局完成之后，我才会考虑用某些库替换本程序的某些组件。这样，引入的框架或第三方库的影响就会被正确的依赖关系所隔离。目前，除了logger，数据库，gRPC和Protobuf（这是无法避免的）之外，我只使用了两个第三方库[ozzo-validation](https://github.com/go-ozzo/ozzo-validation)¹和[YAML](https://github.com/go-yaml/yaml/tree/v2.2.2)²，而其他所有库都是Go的标准库。
+清晰架构（Clean Atchitecture）的一个理念是隔离程序的框架，使框架不会接管你的应用程序，而是由你决定何时何地使用它们。在本程序中，我特意不在开始时使用任何框架，因此我可以更好地控制程序结构。只有在整个程序结构布局完成之后，我才会考虑用某些库替换本程序的某些组件。这样，引入的框架或第三方库的影响就会被正确的依赖关系所隔离。目前，除了logger，数据库，gRPC和Protobuf（这是无法避免的）之外，我只使用了两个第三方库[ozzo-validation](https://github.com/go-ozzo/ozzo-validation)¹和[YAML](https://github.com/go-yaml/yaml/tree/v2.2.2)²，而其他所有库都是Go的标准库。
 
-您可以使用本程序作为构建应用程序的基础。您可能会问，那么本框架岂不是要接管整个应用程序吗？是的。但事实是，无论是你自建框架还是引进第三方框架，您都需要一个基本框架作为构建应用程序的基础。该基础需要具有正确的依赖性和可靠的设计，然后您可以决定是否引入其他库。你当然可以自己建立一个框架，但你最终可能会花费大量的时间和精力来完善它。您也可以使用本程序作为起点，而不是构建自己的项目，从而为您节省大量时间和精力。
+你可以使用本程序作为构建应用程序的基础。你可能会问，那么本框架岂不是要接管整个应用程序吗？是的。但事实是，无论是你自建框架还是引进第三方框架，你都需要一个基本框架作为构建应用程序的基础。该基础需要具有正确的依赖性和可靠的设计，然后你可以决定是否引入其他库。你当然可以自己建立一个框架，但你最终可能会花费大量的时间和精力来完善它。你也可以使用本程序作为起点，而不是构建自己的项目，从而为你节省大量时间和精力。
 
 程序容器是项目中最复杂的部分，是将应用程序的不同部分粘合在一起的关键组件。本程序的其他部分是直截了当且易于理解的，但这一部分不是。好消息是，一旦你理解了这一部分，那么整个程序就都在掌控之中。
 
@@ -87,11 +87,11 @@ description: "程序容器（Application Container）负责创建具体类型并
 
 对于每个用例，例如“registration”，接口在“usecase”包中定义，但具体类型在“usecase”包下的“registration”子包中定义。 此外，容器包中有一个对应的工厂负责创建具体的用例实例。 对于“注册（registration）”用例，它是“registrationFactory.go”。 用例与用例工厂之间的关系是一对一的。 用例工厂负责创建此用例的具体类型（concrete type）并调用其他工厂来创建具体类型所需的成员（member in a struct)。 最低级别的具体类型是sql.DBs和gRPC连接，它们需要被传递给持久层，这样才能访问数据库中的数据。
 
-如果Go支持泛型，您可以创建一个通用工厂来构建不同类型的实例。 现在，我必须为每一层创建一个工厂。 另一个选择是使用反射（refection)，但它有不少问题，因此我没有采用。
+如果Go支持泛型，你可以创建一个通用工厂来构建不同类型的实例。 现在，我必须为每一层创建一个工厂。 另一个选择是使用反射（refection)，但它有不少问题，因此我没有采用。
 
 **“Registration” 用例工厂（Use Case Factory）:**
 
-每次调用工厂时，它都会构建一个新类型。以下是“注册（Registration）”用例创建具体类型的代码。 它是工厂方法模式（factory method pattern）的典型实现。 如果您想了解有关如何在Go中实现工厂方法模式的更多信息，请参阅[此处](https://stackoverflow.com/a/49714445)³.
+每次调用工厂时，它都会构建一个新类型。以下是“注册（Registration）”用例创建具体类型的代码。 它是工厂方法模式（factory method pattern）的典型实现。 如果你想了解有关如何在Go中实现工厂方法模式的更多信息，请参阅[此处](https://stackoverflow.com/a/49714445)³.
 
 {{< highlight go "linenos=table,linenostart=1" >}}
 // Build creates concrete type for RegistrationUseCaseInterface
@@ -126,7 +126,7 @@ func buildUserData(c container.Container, dc *config.DataConfig) (dataservice.Us
 
 “注册（Registration）”用例需要通过数据存储工厂创建的数据库链接来访问数据库。 所有代码都在“datastorefactory”子包中。 我详细解释了数据存储工厂如何工作，请看这篇文章[依赖注入（Dependency Injection）](https://jfeng45.github.io/posts/dependency_injection/)。
 
-数据存储工厂的当前实现支持两个数据库和一个微服务，MySql和CouchDB，以及gRPC缓存服务; 每个实现都有自己的工厂文件。 如果引入了新数据库，您只需添加一个新的工厂文件，并在以下代码中的“dsFbMap”中添加一个条目。
+数据存储工厂的当前实现支持两个数据库和一个微服务，MySql和CouchDB，以及gRPC缓存服务; 每个实现都有自己的工厂文件。 如果引入了新数据库，你只需添加一个新的工厂文件，并在以下代码中的“dsFbMap”中添加一个条目。
 
 {{< highlight go "linenos=table,linenostart=1" >}}
 
@@ -271,7 +271,7 @@ func (mf *ZapFactory) Build(lc *config.LogConfig) error {
 ##### **配置文件:**
 <br/>
 
-配置文件使您可以全面了解程序的整体结构：
+配置文件使你可以全面了解程序的整体结构：
 
 ![config1](/images/config1.jpg)
 
@@ -287,7 +287,7 @@ func (mf *ZapFactory) Build(lc *config.LogConfig) error {
 
 #####  **设计是如何进化的?**
 <br/>
-容器包里似乎有太多东西，问题是我们是否需要所有这些？如果您不需要所有功能，我们当然可以简化它。当我开始创建它时，它非常简单，我不断添加功能，最终它才越来越复杂。
+容器包里似乎有太多东西，问题是我们是否需要所有这些？如果你不需要所有功能，我们当然可以简化它。当我开始创建它时，它非常简单，我不断添加功能，最终它才越来越复杂。
 
 最开始时，我只是想使用工厂方法模式来创建具体类型，没有日志记录，没有配置文件，没有注册表。
 

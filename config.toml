@@ -1,11 +1,14 @@
 baseurl = "https://jfeng45.github.io"
 # title = "Software Craftsman"
 # title = "siteTitle"
-languageCode = "en-us"
-defaultContentLanguage = "en"
+#languageCode = "en-us"
+#defaultContentLanguage = "en"
+languageCode = "zh-Hans"
+defaultContentLanguage = "zh"
 hasCJKLanguage = true
+DisqusShortname = "jfeng45"
 
-# Pagination
+# Pagination =
 paginate = 5
 paginatePath = "page"
 
@@ -29,7 +32,7 @@ theme = "hugo-bootstrap"
   #copyright = "Hugo template made with by Jin Feng"
 
   [[languages.en.menu.main]]
-    url = "/posts"
+    url = "/introduction"
     name = "Home"
     weight = 1
   [[languages.en.menu.main]]
@@ -48,7 +51,7 @@ theme = "hugo-bootstrap"
   author = "冯进"
 
   [[languages.zh.menu.main]]
-    url = "/zh/"
+    url = "/introduction"
     name = "首页"
     weight = 1
   [[languages.zh.menu.main]]

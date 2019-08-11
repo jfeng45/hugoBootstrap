@@ -21,7 +21,7 @@ Coding style is a relatively boring topic in programming, but it is crucial to h
 
 1. Naming convention
 
-I already talked about application layout in “[Go Microservice with Clean Architecture: Application Layout](https://jfeng45.github.io/posts/go_microservice_application_layout/)”¹ , so this article covers the rest.
+I already talked about application layout in “[Go Microservice with Clean Architecture: Application Layout](https://jfeng45.github.io/en/posts/go_microservice_application_layout/)”¹ , so this article covers the rest.
 
 ## **Coding rules or style**
 
@@ -76,12 +76,12 @@ The complete code is in [github](https://github.com/jfeng45/servicetmpl): https:
 
 ## Other articles:
 
-Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/posts/clean_architecture_with_go/)”.
+Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/en/posts/clean_architecture_with_go/)”.
 
 ## Reference:
 
 [1][Go Microservice with Clean Architecture: Application Layout]
-(https://jfeng45.github.io/posts/go_microservice_application_layout/)
+(https://jfeng45.github.io/en/posts/go_microservice_application_layout/)
 
 [2][What’s in a name?]
 (https://talks.golang.org/2014/names.slide#4)

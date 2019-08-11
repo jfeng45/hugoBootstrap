@@ -352,7 +352,7 @@ func (uds *UserDataSql) Find(id int) (*model.User, error) {
 
 **Panic:**
 
-I saw a lot of Go database code generated a panic instead of an error when there is a database error, which could cause a problem in Microservice environment, where you always want to keep the service running. Let’s say when you have a SQL error in an update statement, then users won’t be able to access that function, which is bad. But if because that, the whole service or website is shutdown, then it is much worse. So the right way to do is propagating the error to upper level and let it decide what to do. What if it is a third party library, who generates the panic? Then, you need to catch and recover from the panic to keep your service running. I gave an example of it in another article “[Application Logging](https://jfeng45.github.io/posts/go_logging_and_error_handling/)”⁸.
+I saw a lot of Go database code generated a panic instead of an error when there is a database error, which could cause a problem in Microservice environment, where you always want to keep the service running. Let’s say when you have a SQL error in an update statement, then users won’t be able to access that function, which is bad. But if because that, the whole service or website is shutdown, then it is much worse. So the right way to do is propagating the error to upper level and let it decide what to do. What if it is a third party library, who generates the panic? Then, you need to catch and recover from the panic to keep your service running. I gave an example of it in another article “[Application Logging](https://jfeng45.github.io/en/posts/go_logging_and_error_handling/)”⁸.
 
 ## Source Code:
 
@@ -360,7 +360,7 @@ The complete code is in [github](https://github.com/jfeng45/servicetmpl): https:
 
 ## Other articles:
 
-Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/posts/clean_architecture_with_go/)”.
+Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/en/posts/clean_architecture_with_go/)”.
 
 ## References:
 
@@ -385,4 +385,4 @@ Please read the rest of the articles in this series in “[Go Microservice with 
 (https://github.com/jmoiron/sqlx)
 
 [8][Go Microservice with Clean Architecture: Application Logging]
-(https://jfeng45.github.io/posts/go_logging_and_error_handling/)
+(https://jfeng45.github.io/en/posts/go_logging_and_error_handling/)

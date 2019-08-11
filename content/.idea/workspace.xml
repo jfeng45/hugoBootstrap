@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77b2de6b-2914-49b1-bac2-0ed8007dda0c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/posts/application_container.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/posts/application_container.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/posts/clean_architecture_application_design.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/posts/clean_architecture_application_design.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/posts/clean_architecture_design_principle.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/posts/clean_architecture_design_principle.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/posts/clean_architecture_with_go.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/posts/clean_architecture_with_go.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/posts/coding_style.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/posts/coding_style.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/posts/dependency_injection.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/posts/dependency_injection.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/posts/go_logging_and_error_handling.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/posts/go_logging_and_error_handling.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/posts/go_microservice_application_layout.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/posts/go_microservice_application_layout.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/posts/transaction_support.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/posts/transaction_support.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/en/project/go-microservice-template.md" beforeDir="false" afterPath="$PROJECT_DIR$/en/project/go-microservice-template.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/posts/application_container.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh/posts/application_container.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/posts/clean_architecture_application_design.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh/posts/clean_architecture_application_design.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/posts/clean_architecture_design_principle.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh/posts/clean_architecture_design_principle.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/posts/clean_architecture_with_go.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh/posts/clean_architecture_with_go.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/posts/coding_style.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh/posts/coding_style.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/posts/go_logging_and_error_handling.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh/posts/go_logging_and_error_handling.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/posts/go_microservice_application_layout.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh/posts/go_microservice_application_layout.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zh/posts/transaction_support.md" beforeDir="false" afterPath="$PROJECT_DIR$/zh/posts/transaction_support.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../themes/hugo-bootstrap/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/../themes/hugo-bootstrap/layouts/_default/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../themes/hugo-bootstrap/layouts/partials/post-date.html" beforeDir="false" afterPath="$PROJECT_DIR$/../themes/hugo-bootstrap/layouts/partials/post-date.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="C:\app1\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="20" />
+    <option name="y" value="4" />
+    <option name="width" value="1268" />
+    <option name="height" value="724" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="content" type="b2602c69:ProjectViewProjectNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="20" y="4" width="1268" height="724" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

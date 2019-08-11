@@ -170,7 +170,7 @@ The complete code is in [github](https://github.com/jfeng45/servicetmpl): https:
 
 ## Other articles:
 
-Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/posts/clean_architecture_with_go/)”.
+Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/en/posts/clean_architecture_with_go/)”.
 
 ## References:
 

@@ -2,7 +2,6 @@
 
 <header>
     {{ partial "post-title" . }}
-    {{ partial "post-date" . }}
     {{ partial "post-tags" . }}
     {{ partial "post-categories" . }}
     <hr>
@@ -22,7 +21,7 @@
     {{ end }}
 
     {{ partial "related" . }}
-    {{ partial "disqus.html" . }}
+
 </article>
 
 {{ end }}

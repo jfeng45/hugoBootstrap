@@ -16,7 +16,7 @@ description: "我使用Spring的基于接口的编程和依赖注入（Dependenc
 
 我最近写了一个Go微服务应用程序，这个程序的设计来自三个灵感：
 
-* [清晰架构"Clean Architecture"](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)¹ and [SOLID (面向对象设计)](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)² 设计 [Go SOLID](https://dave.cheney.net/2016/08/20/solid-go-design)³
+* [清晰架构"Clean Architecture"](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)¹ and [SOLID (面向对象设计)](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)² 设计 [原则](https://dave.cheney.net/2016/08/20/solid-go-design)³
 
 * [Spring的容器技术（Spring’s application context）](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#beans)⁴
 
@@ -31,7 +31,7 @@ description: "我使用Spring的基于接口的编程和依赖注入（Dependenc
 
 1. [基于接口编程（Programming on interface）](https://en.wikipedia.org/wiki/Interface-based_programming)⁷
 
-     本程序有三个主要业务层，用例（usecase），数据服务（dataservice）和域模型（model），其中只有域模型没有接口，因为没有必要。 当您访问外部服务时，您可以通过接口进行访问。
+     本程序有三个主要业务层，用例（usecase），数据服务（dataservice）和域模型（model），其中只有域模型没有接口，因为没有必要。 当你访问外部服务时，你可以通过接口进行访问。
 
     {{< highlight go "linenos=table,linenostart=1" >}}
     // sqlUserDataServiceFactory is a empty receiver for Build method
@@ -54,7 +54,7 @@ description: "我使用Spring的基于接口的编程和依赖注入（Dependenc
     {{< / highlight >}}
     
     <br/>
-    基于接口的编程的关键是将接口作为参数传递给函数，并返回接口而不是具体类型。 例如，在上面的代码中，返回值-“dataservice.UserDataInterface”，它是一个接口，而不是struct。 调用函数不需要知道返回的具体结构，因为接口封装了它需要的所有信息。 这使您可以非常灵活地将返回的结构替换为另一个结构，而不会影响调用函数。
+    基于接口的编程的关键是将接口作为参数传递给函数，并返回接口而不是具体类型。 例如，在上面的代码中，返回值-“dataservice.UserDataInterface”，它是一个接口，而不是struct。 调用函数不需要知道返回的具体结构，因为接口封装了它需要的所有信息。 这使你可以非常灵活地将返回的结构替换为另一个结构，而不会影响调用函数。
 
 2. 用工厂方法模式（factory method pattern）通过依赖注入（Dependency Injection）创建具体类型.
 
@@ -80,14 +80,14 @@ description: "我使用Spring的基于接口的编程和依赖注入（Dependenc
 
 与Java中的类似解决方案相比，由于Go的语言本身的简单设计，本程序中的代码量要少很多，也非常简洁。 但是对于来自其他编程语言（特别是动态语言如PHP，Ruby）的人来说，这个程序的设计可能有些重。 我也问了自己同样的问题。 为了得到答案，需要比较成本和收益以得出最终结论。
 
-通常来说有两种类型的需求变更，业务逻辑变更和技术方案变更。 在编写业务代码时，您不希望关注数据是来自MongoDB还是MySQL还是微服务。 在进行技术修改时，最大的噩梦是意外破坏业务逻辑。 一个好的设计将这两种类型的编码在程序中分开，让你一次只关注一个。
+通常来说有两种类型的需求变更，业务逻辑变更和技术方案变更。 在编写业务代码时，你不希望关注数据是来自MongoDB还是MySQL还是微服务。 在进行技术修改时，最大的噩梦是意外破坏业务逻辑。 一个好的设计将这两种类型的编码在程序中分开，让你一次只关注一个。
 
 一般来说，技术方案变更不会像业务逻辑变化那样频繁发生，但随着微服务的普及，新技术将被更快地采用，这将加速技术变更。
 
 ##### **设计带来的好处:**
 <br/>
 
-以下是几个示例，向您展示当需求变更时需要对程序进行的改动。 如果您看不太懂本节，可能需要先阅读“[程序设计](https://jfeng45.github.io/posts/clean_architecture_application_design/)¹¹，它将为您提供程序结构的描述。
+以下是几个示例，向你展示当需求变更时需要对程序进行的改动。 如果你看不太懂本节，可能需要先阅读“[程序设计](https://jfeng45.github.io/posts/clean_architecture_application_design/)¹¹，它将为你提供程序结构的描述。
 
 ##### **从MySQL改成MongoDB:**
 <br/>
@@ -113,7 +113,7 @@ description: "我使用Spring的基于接口的编程和依赖注入（Dependenc
 ##### **改变用户注册用例（registration use case）调用另一个RESTFul服务:**
 <br/>
 
-其次，假设随着功能增多，应用程序变得越来越大，您决定将部分功能拆分为另一个微服务，例如支付服务。现在，您的代码需要调用另一个微服务，它是用RESTFul协议中实现的。以下是步骤：
+其次，假设随着功能增多，应用程序变得越来越大，你决定将部分功能拆分为另一个微服务，例如支付服务。现在，你的代码需要调用另一个微服务，它是用RESTFul协议中实现的。以下是步骤：
 
 1. 在“appConfig [type] .yaml”文件中为RESTFul配置添加新条目
 
@@ -143,11 +143,11 @@ description: "我使用Spring的基于接口的编程和依赖注入（Dependenc
 
 1. 创建程序容器以执行依赖注入
 
-步骤1到3几乎没有额外的工作，对于第3步，您可能无法绕过。
+步骤1到3几乎没有额外的工作，对于第3步，你可能无法绕过。
 
 第4步有一定的工作量，并且比较复杂性。这是基于接口编程的结果。每个函数都通过接口调用另一个函数，但是你需要一个地方来创建具体的类型，那就是应用程序容器，其中所有的复杂性都在其中。大多数复杂性来自于我们希望简化创建新类型带来的工作，因此容器必须足够灵活以适应新类型的加入。
 
-如果您的程序不会引入很多新类型，或者您宁愿将来花费更多时间但想现在节省一些时间，那么您可以通过以下步骤使其更加简单。首先，如果您不需要灵活地切换到另一个日志记录器，请删除“logger”包。其次，删除“config”包。这样您不需从YAML文件中读取配置，但是您也失去了通过配置文件更改应用程序行为的灵活性。第三，您甚至可以删除工厂方法模式。但是，您还将失去上述所有优势，并且可能会在进行技术更改时冒险破坏业务逻辑的风险。
+如果你的程序不会引入很多新类型，或者你宁愿将来花费更多时间但想现在节省一些时间，那么你可以通过以下步骤使其更加简单。首先，如果你不需要灵活地切换到另一个日志记录器，请删除“logger”包。其次，删除“config”包。这样你不需从YAML文件中读取配置，但是你也失去了通过配置文件更改应用程序行为的灵活性。第三，你甚至可以删除工厂方法模式。但是，你还将失去上述所有优势，并且可能会在进行技术更改时冒险破坏业务逻辑的风险。
 
 **配置管理:**
 

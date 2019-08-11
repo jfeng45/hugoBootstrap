@@ -125,7 +125,7 @@ func buildUserData(c container.Container, dc *config.DataConfig) (dataservice.Us
 
 **Data store factory:**
 
-“Registration” use case needs to access database through a handler, which is created by the data store factory. All code is in “datastorefactory” sub-package. I explained in detail how data store factory works in another “[Dependency Injection](https://jfeng45.github.io/posts/dependency_injection/)”⁴.
+“Registration” use case needs to access database through a handler, which is created by the data store factory. All code is in “datastorefactory” sub-package. I explained in detail how data store factory works in another “[Dependency Injection](https://jfeng45.github.io/en/posts/dependency_injection/)”⁴.
 
 Current implementation of the data store factory supports two databases, MySql and CouchDB, and a gRPC cache service; each implementation has it’s own factory file. If a new database is introduced, you just need to add a new factory file and add an entry in “dsFbMap” in the following code.
 
@@ -295,7 +295,7 @@ I started with the use case and the data store factory. Initially, for each use 
 
 Then I found (I got some inspiration from [here](https://itnext.io/how-i-pass-around-shared-resources-databases-configuration-etc-within-golang-projects-b27af4d8e8a)⁵) it is better to put all the configuration information in a file, so I can change it without changing the code. I created a YAML file (appConfig[type].yaml) and “appConfig.go” to load the content from the file into an application configuration struct-“appConfig” and pass it to factory builders. The “[type]” can be “prod”, “dev”, “test” and so on. The config file is loaded only once. Currently, it didn’t use any third party lib, but I am thinking to switch to [Vipe](https://github.com/spf13/viper)⁶ in the future, so it can support dynamic reloading of application configurations from a configuration server. To make the switch, I only need to change one file, “appConfig.go”.
 
-For logging, I’d like only one instance of logger so I can set the same logging configurations for the whole application. I created a logger package inside the container. I also tried different logging libraries to figure out which one is the best, then I created a logging factory to make it easier to add new loggers in the future. Please read “[application logging](https://jfeng45.github.io/posts/go_logging_and_error_handling/)”⁷ for detail.
+For logging, I’d like only one instance of logger so I can set the same logging configurations for the whole application. I created a logger package inside the container. I also tried different logging libraries to figure out which one is the best, then I created a logging factory to make it easier to add new loggers in the future. Please read “[application logging](https://jfeng45.github.io/en/posts/go_logging_and_error_handling/)”⁷ for detail.
 
 ## Source Code:
 
@@ -303,7 +303,7 @@ The complete code is in [github](https://github.com/jfeng45/servicetmpl): https:
 
 ## Other articles:
 
-Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/posts/clean_architecture_with_go/)”.
+Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/en/posts/clean_architecture_with_go/)”.
 
 ## Reference:
 
@@ -317,7 +317,7 @@ Please read the rest of the articles in this series in “[Go Microservice with 
 (https://stackoverflow.com/a/49714445)
 
 [4][Go Microservice with Clean Architecture: Dependency Injection]
-(https://jfeng45.github.io/posts/dependency_injection/)
+(https://jfeng45.github.io/en/posts/dependency_injection/)
 
 [5] [How I pass around shared resources (databases, configuration, etc) within Golang projects]
 (https://itnext.io/how-i-pass-around-shared-resources-databases-configuration-etc-within-golang-projects-b27af4d8e8a)
@@ -326,4 +326,4 @@ Please read the rest of the articles in this series in “[Go Microservice with 
 (https://github.com/spf13/viper)
 
 [7][Go Microservice with Clean Architecture: Application Logging]
-(https://jfeng45.github.io/posts/go_logging_and_error_handling/)
+(https://jfeng45.github.io/en/posts/go_logging_and_error_handling/)

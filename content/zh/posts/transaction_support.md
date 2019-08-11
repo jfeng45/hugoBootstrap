@@ -19,7 +19,7 @@ description: "Go中的业务级事务管理系统，它完成了声明式事务�
 ##### **需求:**
 
 1. 将业务逻辑与事务代码分开。
-在编写业务用例时，开发者应该只需考虑业务逻辑，不需要同时考虑怎样给业务逻辑加事务管理。如果以后需要添加事务支持，您可以在现有业务逻辑的基础上进行简单封装，而无需更改任何其他代码。事务实现细节应该对业务逻辑透明。
+在编写业务用例时，开发者应该只需考虑业务逻辑，不需要同时考虑怎样给业务逻辑加事务管理。如果以后需要添加事务支持，你可以在现有业务逻辑的基础上进行简单封装，而无需更改任何其他代码。事务实现细节应该对业务逻辑透明。
 
 1. 事务逻辑应该作用于用例层（业务逻辑）
 不在持久层上。
@@ -27,8 +27,8 @@ description: "Go中的业务级事务管理系统，它完成了声明式事务�
 1. 数据服务（数据持久性）层应对事务逻辑透明。
 这意味着持久性代码应该是相同的，无论它是否支持事务
 
-1. 您可以选择延迟支持事物。
-您可以先编写没有事务的用例，稍后可以在不修改现有代码的情况下给该用例加上事务。您只需添加新代码。
+1. 你可以选择延迟支持事物。
+你可以先编写没有事务的用例，稍后可以在不修改现有代码的情况下给该用例加上事务。你只需添加新代码。
 
 我最终的解决方案还不是声明式事务管理，但它非常接近。创建一个真正的声明式事务管理需要付出很多努力，因此我构建了一个可以实现声明式事务的大多数功能的事务管理，同时又没花很多精力。
 
@@ -126,7 +126,7 @@ func (sct *SqlConnTx) Rollback() error {
 
 **用例层的事物接口**
 
-在用例层中，您可以拥有相同业务功能的一个函数的两个版本，一个支持事务，一个不支持，并且它们的名称可以共享相同的前缀，而事务可以添加“withTx”作为后缀。 例如，在以下代码中，“ModifyAndUnregister”是不支持事务的那个，“ModifyAndUnregisterWithTx”是支持事务的那个。 “EnableTxer”是用例层上唯一的事务支持接口，任何支持事务的“用例”都需要它。 这里的所有代码都在是用例层级（包括“EnableTxer”）代码，不涉及数据库内容。
+在用例层中，你可以拥有相同业务功能的一个函数的两个版本，一个支持事务，一个不支持，并且它们的名称可以共享相同的前缀，而事务可以添加“withTx”作为后缀。 例如，在以下代码中，“ModifyAndUnregister”是不支持事务的那个，“ModifyAndUnregisterWithTx”是支持事务的那个。 “EnableTxer”是用例层上唯一的事务支持接口，任何支持事务的“用例”都需要它。 这里的所有代码都在是用例层级（包括“EnableTxer”）代码，不涉及数据库内容。
 
 {{< highlight go "linenos=table,linenostart=1" >}}
 type RegistrationUseCaseInterface interface {
@@ -151,7 +151,7 @@ type EnableTxer interface {
 
 <br/>
 
-以下是不包含事务的业务逻辑代码的示例。 “modifyAndUnregister（ruc，user）”是事务和非事务用例函数共享的业务功能。 您需要使用TxBegin（）和TxEnd（）（在TxDataInterface中）来包装业务功能以支持事务，这些是数据服务层接口，并且与数据库访问层无关。 该用例还实现了“EnableTx（）”接口，该接口实际上将底层数据库链接从sql.DB切换到sql.Tx.
+以下是不包含事务的业务逻辑代码的示例。 “modifyAndUnregister（ruc，user）”是事务和非事务用例函数共享的业务功能。 你需要使用TxBegin（）和TxEnd（）（在TxDataInterface中）来包装业务功能以支持事务，这些是数据服务层接口，并且与数据库访问层无关。 该用例还实现了“EnableTx（）”接口，该接口实际上将底层数据库链接从sql.DB切换到sql.Tx.
 
 {{< highlight go "linenos=table,linenostart=1" >}}
 // The use case of ModifyAndUnregister without transaction
@@ -267,7 +267,7 @@ func (tds *TxDataSql) GetTx() gdbc.SqlGdbc {
 
 **事物策略:**
 
-您可能会问为什么我在上面的代码中需要“TxDataSql”？ 确实可以在没有它的情况下实现事务，实际上最开的程序里就没有它。 但是我还是要在某些数据服务中实现“TxDataInterface”来开始和结束事务。 由于这是在用例层中完成的，用例层不知道哪个数据服务类型实现了接口，因此必须在每个数据服务接口上实现“TxDataInterface”（例如，“UserDataInterface”和“CourseDataInterface”）以保证 “用例层”不会选择没有接口的“数据服务（data service）”。 在创建“TxDataSql”之后，我只需要在“TxDataSql”中实现一次“TxDataInterface”，然后每个数据服务类型只需要实现“EnableTx（）”就行了。
+你可能会问为什么我在上面的代码中需要“TxDataSql”？ 确实可以在没有它的情况下实现事务，实际上最开的程序里就没有它。 但是我还是要在某些数据服务中实现“TxDataInterface”来开始和结束事务。 由于这是在用例层中完成的，用例层不知道哪个数据服务类型实现了接口，因此必须在每个数据服务接口上实现“TxDataInterface”（例如，“UserDataInterface”和“CourseDataInterface”）以保证 “用例层”不会选择没有接口的“数据服务（data service）”。 在创建“TxDataSql”之后，我只需要在“TxDataSql”中实现一次“TxDataInterface”，然后每个数据服务类型只需要实现“EnableTx（）”就行了。
 
 {{< highlight go "linenos=table,linenostart=1" >}}
 // UserDataSql is the SQL implementation of UserDataInterface
@@ -298,7 +298,7 @@ func (uds *UserDataSql) FindByName(name string) (*model.User, error) {
 
 **依赖关系漏洞:**
 
-上面的代码实现中存在一个缺陷，这会破坏我的设计并使其不完美。它是“TxDataInterface”中的函数“GetTx（）”，它是一个数据服务层接口，因此它不应该依赖于gdbc.SqlGdbc（数据库接口）。您可能认为数据服务层的实现代码无论如何都需要访问数据库，当前这是正确的。但是，您可以在将来更改实现去调用gRPC微服务（而不是数据库）。如果接口不依赖于SQL接口的话，则可以自由更改实现，但如果不是，则即使您的接口实现已更改，该接口也会永久保留对SQL的依赖。
+上面的代码实现中存在一个缺陷，这会破坏我的设计并使其不完美。它是“TxDataInterface”中的函数“GetTx（）”，它是一个数据服务层接口，因此它不应该依赖于gdbc.SqlGdbc（数据库接口）。你可能认为数据服务层的实现代码无论如何都需要访问数据库，当前这是正确的。但是，你可以在将来更改实现去调用gRPC微服务（而不是数据库）。如果接口不依赖于SQL接口的话，则可以自由更改实现，但如果不是，则即使你的接口实现已更改，该接口也会永久保留对SQL的依赖。
 
 为什么它是本程序中打破依赖关系的唯一地方？因为对于其他接口，容器负责创建具体类型，而程序的其余部分仅使用接口。但是对于事务，在创建具体类型之后，需要将底层数据库处理程序从sql.DB替换为sql.Tx，这破坏了设计。
 
@@ -306,7 +306,7 @@ func (uds *UserDataSql) FindByName(name string) (*model.User, error) {
 
 ##### **好处:**
 
-通过这个实现，事务代码对业务逻辑几乎是透明的（除了我上面提到的缺陷）。业务逻辑中没有数据存储（datastore）级事务代码，如Tx.Begin，Tx.Commit和Tx.Rollback（但你确实需要业务级别事物函数Tx.Begin和Tx.End），不仅如此，您的持久性代码中也几乎没有数据存储级事务代码。 如需在用例层上启用事务，您只需要在用例上实现EnableTx（）并将业务函数封装在“TxBegin（）”，EnableTx（）和“TxEnd（）”中，如上例所示。 在持久层上，大多数事务代码已经由“txDataService.go”实现，您只需要为特定的数据服务（例如UserDataService）实现“EnableTx”。 事务支持的真正操作是在“transaction.go”文件中实现的，它实现了“Transactioner”接口，它有四个函数，“Rollback”, “Commit”, “TxBegin” 和 “TxEnd”。
+通过这个实现，事务代码对业务逻辑几乎是透明的（除了我上面提到的缺陷）。业务逻辑中没有数据存储（datastore）级事务代码，如Tx.Begin，Tx.Commit和Tx.Rollback（但你确实需要业务级别事物函数Tx.Begin和Tx.End），不仅如此，你的持久性代码中也几乎没有数据存储级事务代码。 如需在用例层上启用事务，你只需要在用例上实现EnableTx（）并将业务函数封装在“TxBegin（）”，EnableTx（）和“TxEnd（）”中，如上例所示。 在持久层上，大多数事务代码已经由“txDataService.go”实现，你只需要为特定的数据服务（例如UserDataService）实现“EnableTx”。 事务支持的真正操作是在“transaction.go”文件中实现的，它实现了“Transactioner”接口，它有四个函数，“Rollback”, “Commit”, “TxBegin” 和 “TxEnd”。
 
 ##### **对用例增加事物支持的步骤:**
 
@@ -320,18 +320,18 @@ func (uds *UserDataSql) FindByName(name string) (*model.User, error) {
 
 ##### **缺陷:**
 
-首先，它仍然不是声明​​式事物管理;第二，它没有完全达到需求中的＃4。要将用例函数从非事务更改为事务，您可以创建一个支持事务的新函数，它需要更改调用函数; 或者您修改现有函数并将其包装到事务中，这也需要代码更改。为了实现＃4，需要添加许多代码，因此我将其推迟到以后。第三，它不支持嵌套事务（Nested Transaction），因此您需要手动确保代码中没有发生嵌套事务。如果代码库不是太复杂，这很容易做到。如果你有一个非常复杂的代码库，有很多事务和非事务函数混在一起，那么手工做起来会比较困难，这是需要在程序中实现嵌套事务或找到已经支持它的方案。我没有花时间研究添加嵌套事务所需的工作量，但这可能并不容易。如果你对它感兴趣，[这里](https://github.com/golang/go/issues/7898)³是一些讨论。到目前为止，对于大多数情况而言，当前的解决方案可能是在代价不大的情况下的最佳方案。
+首先，它仍然不是声明​​式事物管理;第二，它没有完全达到需求中的＃4。要将用例函数从非事务更改为事务，你可以创建一个支持事务的新函数，它需要更改调用函数; 或者你修改现有函数并将其包装到事务中，这也需要代码更改。为了实现＃4，需要添加许多代码，因此我将其推迟到以后。第三，它不支持嵌套事务（Nested Transaction），因此你需要手动确保代码中没有发生嵌套事务。如果代码库不是太复杂，这很容易做到。如果你有一个非常复杂的代码库，有很多事务和非事务函数混在一起，那么手工做起来会比较困难，这是需要在程序中实现嵌套事务或找到已经支持它的方案。我没有花时间研究添加嵌套事务所需的工作量，但这可能并不容易。如果你对它感兴趣，[这里](https://github.com/golang/go/issues/7898)³是一些讨论。到目前为止，对于大多数情况而言，当前的解决方案可能是在代价不大的情况下的最佳方案。
 
 ##### **应用范围:**
 
-首先，它只支持SQL数据库的事务。 如果您有NoSql数据库，它将无法工作（大多数NoSql数据库无论如何都不支持事务）。 其次，如果事务跨越了数据库的边界（例如在不同的微服务器之间），那么它将无法工作。 在这种情况下，你需要使用[Saga](https://www.youtube.com/watch?v=xDuwrtwYHu8)⁴。它的原理是为事物中的每个操作写一个补偿操作，然后在回滚阶段挨个执行每一个补偿操作。 在当前框架中添加Sage解决方案应该不难。
+首先，它只支持SQL数据库的事务。 如果你有NoSql数据库，它将无法工作（大多数NoSql数据库无论如何都不支持事务）。 其次，如果事务跨越了数据库的边界（例如在不同的微服务器之间），那么它将无法工作。 在这种情况下，你需要使用[Saga](https://www.youtube.com/watch?v=xDuwrtwYHu8)⁴。它的原理是为事物中的每个操作写一个补偿操作，然后在回滚阶段挨个执行每一个补偿操作。 在当前框架中添加Sage解决方案应该不难。
 
 ##### **其他数据库相关问题:**
 <br/>
 
 **关闭数据库链接（Close connection）**
 
-我从来没有为数据库链接调用Close（）函数，因为没有必要这样做。 您可以传入sql.DB或sql.Tx作为持久性函数的接收器（receiver）。 对于sql.DB，数据库将自动创建链接池并为您管理链接。 链接完成后，它将返回到链接池，无需关闭。 对于sql.Tx，在事务结束时，您可以提交或回滚，之后链接将返回到连接池，而无需关闭。 请参阅[此处](https://www.vividcortex.com/blog/2015/09/22/common-pitfalls-go/)⁵ 和 [此处](http://go-database-sql.org/connection-pool.html)⁶ .
+我从来没有为数据库链接调用Close（）函数，因为没有必要这样做。 你可以传入sql.DB或sql.Tx作为持久性函数的接收器（receiver）。 对于sql.DB，数据库将自动创建链接池并为你管理链接。 链接完成后，它将返回到链接池，无需关闭。 对于sql.Tx，在事务结束时，你可以提交或回滚，之后链接将返回到连接池，而无需关闭。 请参阅[此处](https://www.vividcortex.com/blog/2015/09/22/common-pitfalls-go/)⁵ 和 [此处](http://go-database-sql.org/connection-pool.html)⁶ .
 
 **对象关系映射（O/R mapping）**
 
@@ -339,7 +339,7 @@ func (uds *UserDataSql) FindByName(name string) (*model.User, error) {
 
 **延迟（Defer）:**
 
-在进行数据库访问时，您将进行大量重复调用以关闭数据库类型（例如statements, rows）。例如以下代码中的“defer row.close（）”。 你想要记住这一点，要在错误处理函数之后调用“defer row.close（）”，因为如果不是这样，当出现错误时，“rows”将为nil，这将导致恐慌并且不会执行错误处理代码。
+在进行数据库访问时，你将进行大量重复调用以关闭数据库类型（例如statements, rows）。例如以下代码中的“defer row.close（）”。 你想要记住这一点，要在错误处理函数之后调用“defer row.close（）”，因为如果不是这样，当出现错误时，“rows”将为nil，这将导致恐慌并且不会执行错误处理代码。
 
 {{< highlight go "linenos=table,linenostart=1" >}}
 
@@ -356,7 +356,7 @@ func (uds *UserDataSql) Find(id int) (*model.User, error) {
 
 **恐慌（panic）:**
 
-我看到很多Go数据库代码在出现数据库错误时抛出了恐慌（panic）而不是错误（error），这可能会导致微服务出现问题，因为在微服务环境中您通常希望服务一直运行。 假设当更新语句中出现SQL错误时，用户将无法访问该功能，这很糟糕。 但如果因为这个，整个微服务或网站被关闭，那就更糟了。 因此，正确的方法是将错误传播到上一级并让它决定要做什么。 因此正确的做法是不在你的程序中抛出panic，但如果第三方库抛出恐慌呢？ 这时您需要捕获恐慌并从中恢复以保持您的服务正常运行。 我在另一篇文章“[日志管理](https://jfeng45.github.io/posts/go_logging_and_error_handling/)”⁸中有具体示例.
+我看到很多Go数据库代码在出现数据库错误时抛出了恐慌（panic）而不是错误（error），这可能会导致微服务出现问题，因为在微服务环境中你通常希望服务一直运行。 假设当更新语句中出现SQL错误时，用户将无法访问该功能，这很糟糕。 但如果因为这个，整个微服务或网站被关闭，那就更糟了。 因此，正确的方法是将错误传播到上一级并让它决定要做什么。 因此正确的做法是不在你的程序中抛出panic，但如果第三方库抛出恐慌呢？ 这时你需要捕获恐慌并从中恢复以保持你的服务正常运行。 我在另一篇文章“[日志管理](https://jfeng45.github.io/posts/go_logging_and_error_handling/)”⁸中有具体示例.
 
 ##### **源程序:**
 

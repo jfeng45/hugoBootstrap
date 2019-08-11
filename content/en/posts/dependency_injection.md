@@ -12,7 +12,7 @@ description: "Application container uses Dependency Injection to create concrete
 
 ---
 
-In Clean Architecture, each layer of the application ( use case, data service and domain model) only depends on interface of other layers instead of concrete types. At run-time, the the application container¹ is responsible for creating concrete types and inject them into each function, the technology it used is called Dependency Injection². The following is the requirements.
+In Clean Architecture, each layer of the application ( use case, data service and domain model) only depends on interface of other layers instead of concrete types. At run-time, the the [application container](https://jfeng45.github.io/en/posts/application_container/)¹ is responsible for creating concrete types and inject them into each function, the technology it used is called [Dependency Injection](https://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection)². The following is the requirements.
 
 **Requirements for dependency relationship on container:**
 
@@ -184,7 +184,7 @@ type Gdbc interface {
 {{< / highlight >}}
 <br/>
 
-There is another side effect besides the one talked above. In the following code, the “SetDB” function in the “CourseDataInterface” breaks the dependency. Because “CourseDataInterface” is the data service layer interface, it shouldn’t depend on “gdbc” interface, which is one layer down. This is the second flaw in the dependency relationship of this application, and the first one is in the [transaction support](https://jfeng45.github.io/posts/transaction_support/)⁶ module. There is no good fix for it, if you don’t like it just don’t use it. Try the second level factory similar to “userFataServiceFactory”.
+There is another side effect besides the one talked above. In the following code, the “SetDB” function in the “CourseDataInterface” breaks the dependency. Because “CourseDataInterface” is the data service layer interface, it shouldn’t depend on “gdbc” interface, which is one layer down. This is the second flaw in the dependency relationship of this application, and the first one is in the [transaction support](https://jfeng45.github.io/en/posts/transaction_support/)⁶ module. There is no good fix for it, if you don’t like it just don’t use it. Try the second level factory similar to “userFataServiceFactory”.
 {{< highlight go "linenos=table,linenostart=1" >}}
 
 import (
@@ -263,12 +263,12 @@ The complete code is in [github](https://github.com/jfeng45/servicetmpl): https:
 
 ## Other articles:
 
-Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/posts/clean_architecture_with_go/)”.
+Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/en/posts/clean_architecture_with_go/)”.
 
 ## Reference:
 
 [1][Go Microservice with Clean Architecture: Application Container]
-(https://jfeng45.github.io/posts/application_container/)
+(https://jfeng45.github.io/en/posts/application_container/)
 
 [2] [Inversion of Control Containers and the Dependency Injection pattern]
 (https://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection)
@@ -283,7 +283,7 @@ Please read the rest of the articles in this series in “[Go Microservice with 
 (https://stackoverflow.com/questions/3434466/creating-a-factory-method-in-java-that-doesnt-rely-on-if-else/3434505#3434505)
 
 [6][Go Microservice with Clean Architecture: Transaction Support]
-(https://jfeng45.github.io/posts/transaction_support/)
+(https://jfeng45.github.io/en/posts/transaction_support/)
 
 [7][Dependency Injection in Go] 
 (https://blog.drewolson.org/dependency-injection-in-go)

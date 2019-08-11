@@ -6,6 +6,6 @@
         <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format $dateFormat }}</time>
     {{ end }}
     {{ if $author }}
-        {{ i18n "by" }} <span rel="author">{{ $author }}</span>
+       <span rel="author">{{ $author }}</span>
     {{ end }}
 </div>

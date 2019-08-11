@@ -1,6 +1,6 @@
 ---
 title: "Go Microservice with Clean Architecture"
-shortTitle: "Go Microservice Series"
+shortTitle: "Go Microservice Series(*****)"
 
 date: 2019-07-22
 draft: false
@@ -26,21 +26,21 @@ The series is not about how to create a quick working prototype, but about how t
 
 You don’t need to read articles in the following order. If you are familiar with [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)³ or [SOLID](http://butunclebob.com/ArticleS.UncleBob.PrinciplesOfOod)⁴, you can read the articles in any order without a problem. However, I do recommend you start from the first one, which will give you a overview of the whole project, then you can pick the ones you are interested in.
 
-1. [Go Microservice with Clean Architecture: Application Layout](https://jfeng45.github.io/posts/go_microservice_application_layout/)
+1. [Go Microservice with Clean Architecture: Application Layout](https://jfeng45.github.io/en/posts/go_microservice_application_layout/)
 
-1. [Go Microservice with Clean Architecture: Application Design](https://jfeng45.github.io/posts/clean_architecture_application_design/)
+1. [Go Microservice with Clean Architecture: Application Design](https://jfeng45.github.io/en/posts/clean_architecture_application_design/)
 
-1. [Go Microservice with Clean Architecture: Design Principle](https://jfeng45.github.io/posts/clean_architecture_design_principle/)
+1. [Go Microservice with Clean Architecture: Design Principle](https://jfeng45.github.io/en/posts/clean_architecture_design_principle/)
 
-1. [Go Microservice with Clean Architecture: Coding Style](https://jfeng45.github.io/posts/coding_style/)
+1. [Go Microservice with Clean Architecture: Coding Style](https://jfeng45.github.io/en/posts/coding_style/)
 
-1. [Go Microservice with Clean Architecture: Transaction Support](https://jfeng45.github.io/posts/transaction_support/)
+1. [Go Microservice with Clean Architecture: Transaction Support](https://jfeng45.github.io/en/posts/transaction_support/)
 
-1. [Go Microservice with Clean Architecture: Application Logging](https://jfeng45.github.io/posts/go_logging_and_error_handling/)
+1. [Go Microservice with Clean Architecture: Application Logging](https://jfeng45.github.io/en/posts/go_logging_and_error_handling/)
 
-1. [Go Microservice with Clean Architecture: Application Container](https://jfeng45.github.io/posts/application_container/)
+1. [Go Microservice with Clean Architecture: Application Container](https://jfeng45.github.io/en/posts/application_container/)
 
-1. [Go Microservice with Clean architecture: Dependency Injection](https://jfeng45.github.io/posts/dependency_injection/)
+1. [Go Microservice with Clean architecture: Dependency Injection](https://jfeng45.github.io/en/posts/dependency_injection/)
 
 1. Go Microservice with Clean architecture: Robust Service
 

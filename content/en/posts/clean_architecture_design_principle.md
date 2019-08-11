@@ -57,7 +57,7 @@ Coming from Java background, I am quite familiar with the first two design ideas
 
 2. Create concrete type by dependency injection through the factory method pattern.
 
-    The application container is responsible for creating concrete types and inject them into functions. It will be explained in detail in another “[Dependency Injection](https://jfeng45.github.io/posts/dependency_injection/)”⁸.
+    The application container is responsible for creating concrete types and inject them into functions. It will be explained in detail in another “[Dependency Injection](https://jfeng45.github.io/en/posts/dependency_injection/)”⁸.
 
 3. Set up correct dependency
 
@@ -85,7 +85,7 @@ Generally speaking, technical changes are not happening as often as business cha
 
 ## Benefits of the design:
 
-The following are couple examples to show you what steps are needed to make some changes. If you get a little confused with this section, you may want to read “[application design](https://jfeng45.github.io/posts/clean_architecture_application_design/)”¹¹ first, which will give you an overview of the application structure.
+The following are couple examples to show you what steps are needed to make some changes. If you get a little confused with this section, you may want to read “[application design](https://jfeng45.github.io/en/posts/clean_architecture_application_design/)”¹¹ first, which will give you an overview of the application structure.
 
 ### Change from MySQL to MongoDB:
 
@@ -159,7 +159,7 @@ The complete code is in [github](https://github.com/jfeng45/servicetmpl): https:
 
 ## Other articles:
 
-Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/posts/clean_architecture_with_go/)”.
+Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/en/posts/clean_architecture_with_go/)”.
 
 ## Reference:
 
@@ -185,7 +185,7 @@ Please read the rest of the articles in this series in “[Go Microservice with 
 (https://en.wikipedia.org/wiki/Interface-based_programming)
 
 [8] [Go Microservice with Clean architecture: Dependency Injection]
-(https://jfeng45.github.io/posts/dependency_injection/)
+(https://jfeng45.github.io/en/posts/dependency_injection/)
 
 [9][Open–closed principle]
 (https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle)
@@ -194,7 +194,7 @@ Please read the rest of the articles in this series in “[Go Microservice with 
 (https://en.wikipedia.org/wiki/Data_access_object)
 
 [11][Go Microservice with Clean Architecture: Application Design]
-(https://jfeng45.github.io/posts/clean_architecture_application_design/)
+(https://jfeng45.github.io/en/posts/clean_architecture_application_design/)
 
 [12][viper]
 (https://github.com/spf13/viper)

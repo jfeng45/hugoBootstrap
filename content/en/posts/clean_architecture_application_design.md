@@ -142,7 +142,7 @@ func (uds *UserDataSql) Insert(user *model.User) (*model.User, error) {
 {{< / highlight >}}
 <br/>
 
-If you need to support different databases, you will have one separate implementation for each of them. I will explain it in detail in another article “[Transaction Support](https://jfeng45.github.io/posts/transaction_support/)”³.
+If you need to support different databases, you will have one separate implementation for each of them. I will explain it in detail in another article “[Transaction Support](https://jfeng45.github.io/en/posts/transaction_support/)”³.
 
 ## **Model:**
 
@@ -260,7 +260,7 @@ The complete code is in [github](https://github.com/jfeng45/servicetmpl): https:
 
 ## Other articles:
 
-Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/posts/clean_architecture_with_go/)”.
+Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/en/posts/clean_architecture_with_go/)”.
 
 ## Reference:
 
@@ -271,7 +271,7 @@ Please read the rest of the articles in this series in “[Go Microservice with 
 (https://medium.com/@hatajoe/clean-architecture-in-go-4030f11ec1b1)
 
 [3] [Go Microservice with Clean Architecture: Transaction Support]
-(https://jfeng45.github.io/posts/transaction_support/)
+(https://jfeng45.github.io/en/posts/transaction_support/)
 
 [4][ozzo-validation]
 (https://github.com/go-ozzo/ozzo-validation)

@@ -20,7 +20,7 @@ Go的标准程序结构的最佳资源可能是Github上的[标准Go程序结构
 
 一般来说，创建应用程序结构有两种不同的方法：基于业务功能或基于技术结构。[大家的共识](http://www.javapractices.com/topic/TopicAction.do?Id=205)³是基于业务功能的更好，对于单体项目（monolithic project）来说也确实如此。在微服务架构中，情况发生了变化，因为每个服务都有自己的存储库。因此，在每个微服务中，基于技术结构创建项目结构实际上是可行的。
 
-我还在[应用程序结构](https://medium.com/@benbjohnson/structuring-applications-in-go-3b04be4ff091)⁴和[包结构](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)⁵上找到了Ben Johnson的一些好建议。但它没有为我的项目提供完整的解决方案，所以我决定创建自己的程序结构。程序结构取决于项目要求，以下是需求。
+我还找到了Ben Johnson关于[应用程序结构](https://medium.com/@benbjohnson/structuring-applications-in-go-3b04be4ff091)⁴和[包结构](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)⁵的一些好建议。但它没有为我的项目提供完整的解决方案，所以我决定创建自己的程序结构。程序结构取决于项目要求，以下是需求。
 
 ##### **项目需求**:
 <br/>
@@ -35,7 +35,7 @@ Go的标准程序结构的最佳资源可能是Github上的[标准Go程序结构
 
 5.支持业务级别的事物交易。
 
-程序结构也受到程序设计的影响。 我采用了 [Bob Martin的清晰架构（Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)⁶ 和 Go的 [简洁](https://talks.golang.org/2012/splash.article)⁷ 设计风格.
+程序结构也受到程序设计的影响。 我采用了 [Bob Martin的清晰架构（Clean Architecture）](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)⁶ 和 Go的 [简洁](https://talks.golang.org/2012/splash.article)⁷ 设计风格.
 
 在业务逻辑方面，有三层：“模型（model）”，即域模型; “数据服务（dataservice）”，它是数据持久性（数据库）层; “用例（usecase）”，这是业务逻辑层。
 
@@ -44,7 +44,7 @@ Go的标准程序结构的最佳资源可能是Github上的[标准Go程序结构
 
 ![service tmpl](/images/serviceTmpl.jpg)
 
-**adapter:** 这是应用程序和外部数据服务之间的接口，例如另一个gRPC服务。 所有数据转换都发生在这里，这样您的业务逻辑代码不需要了解外部服务的具体实现（无论是gRPC还是REST）。
+**adapter:** 这是应用程序和外部数据服务之间的接口，例如另一个gRPC服务。 所有数据转换都发生在这里，这样你的业务逻辑代码不需要了解外部服务的具体实现（无论是gRPC还是REST）。
 
 **cmd:** 命令。 所有不同类型的“main.go”都在这里，你可以有多个。 这是应用程序的起点。
 
@@ -71,7 +71,7 @@ Go的标准程序结构的最佳资源可能是Github上的[标准Go程序结构
 
 ![adapter](/images/adapter.jpg)
 
-当程序需要与微服务或其他外部服务进行交互时，您需要创建接口以减少依赖性。例如，本程序中的“缓存服务”是一个gRPC微服务。每个外部服务都有自己的子包和文件。例如，缓存服务具有“cacheclient”包和“cacheClient.go”文件，该文件定义了与外部“缓存”微服务交互的类型和方法。
+当程序需要与微服务或其他外部服务进行交互时，你需要创建接口以减少依赖性。例如，本程序中的“缓存服务”是一个gRPC微服务。每个外部服务都有自己的子包和文件。例如，缓存服务具有“cacheclient”包和“cacheClient.go”文件，该文件定义了与外部“缓存”微服务交互的类型和方法。
 
 在我们的示例中，与其他数据服务不同，“cacheClient.go”文件没有定义缓存服务的接口。实际上它有一个，但是interface是在“dataservice”包中定义的，因为“缓存服务”也是一个数据服务。更明确的方法可能是在两个包中各自创建一个接口，这将保持包结构的统一。但是这两个接口将是相同且冗余的，所以我删除了适配器中的接口。
 
@@ -81,13 +81,13 @@ Go的标准程序结构的最佳资源可能是Github上的[标准Go程序结构
 
 ![cmd](/images/cmd.jpg)
 
-应用程序的命令，是整个程序的起点。 您可以将应用程序作为本地应用程序运行，也可以将其作为微服务应用程序运行，在这种情况下，您同时拥有客户端（grpcClientMain.go）和服务器端（grpcServerMain.go）主文件。 所有未来的主文件也将在此处，例如，Web应用程序服务器主文件。
+应用程序的命令，是整个程序的起点。 你可以将应用程序作为本地应用程序运行，也可以将其作为微服务应用程序运行，在这种情况下，你同时拥有客户端（grpcClientMain.go）和服务器端（grpcServerMain.go）主文件。 所有未来的主文件也将在此处，例如，Web应用程序服务器主文件。
 
 **config:**
 
 ![config](/images/config.jpg)
 
-在此保存所有应用配置文件。 “appConfig.go”负责从配置文件中读取并数据将它们加载到应用程序配置结构中。 您可以为不同的环境提供不同的配置文件（YAML文件），例如“Dev”和“Prod”。
+在此保存所有应用配置文件。 “appConfig.go”负责从配置文件中读取并数据将它们加载到应用程序配置结构中。 你可以为不同的环境提供不同的配置文件（YAML文件），例如“Dev”和“Prod”。
 
 **container:**
 
@@ -122,7 +122,7 @@ Go的标准程序结构的最佳资源可能是Github上的[标准Go程序结构
 
 ![tool](/images/tools.jpg)
 
-此程序包适用于第三方工具。 如果您不想直接依赖第三方库，或者需要增强这些第三方库，请在此处进行封装。 不要与“adapter”包混淆，后者也处理第三方库，但只适用于应用程序级数据服务。 “tool”包更适用于较低级别的库。
+此程序包适用于第三方工具。 如果你不想直接依赖第三方库，或者需要增强这些第三方库，请在此处进行封装。 不要与“adapter”包混淆，后者也处理第三方库，但只适用于应用程序级数据服务。 “tool”包更适用于较低级别的库。
 
 **useCase:**
 
@@ -139,7 +139,7 @@ Go的标准程序结构的最佳资源可能是Github上的[标准Go程序结构
 
 ![use case alt](/images/usecaseNew.jpg)
 
-如果您为其他人编写一个外部库，那么将代码放入一个大包中是一个很好的规则，因为人们不需要多个import语句来使用您的库。 但是在你自己的应用程序中，拥有小包是可以的，特别是当你只将接口暴露给其他层时。
+如果你为其他人编写一个外部库，那么将代码放入一个大包中是一个很好的规则，因为人们不需要多个import语句来使用你的库。 但是在你自己的应用程序中，拥有小包是可以的，特别是当你只将接口暴露给其他层时。
 
 本程序为什要用小包呢？ 首先“useCase.go”只定义接口，而其他包（容器除外）仅依赖于接口，因此“useCase.go”需要一个独立的包。 其次，用文件夹分隔每个用例使程序更清晰易读。
 

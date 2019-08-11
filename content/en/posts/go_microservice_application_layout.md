@@ -93,7 +93,7 @@ Save all application configuration files here. “appConfig.go” is responsible
 
 The most complex package in this app, which creates the concrete structs for each interface and injects them into other layers. The sub-level structure in it resembles the application layer, which also have “use case”, “data service” and “data store” layer.
 
-Under the top level, “container.go” defines the container interface, and the implementation file “serviceContainer.go” is in “servicecontainer” package. It is the entry point or this package, which glues other code in this folder together. “registrationFactory.go” in “usecasefactory” sub-package and other factories using factory method pattern to create structs. [Logging](https://jfeng45.github.io/posts/go_logging_and_error_handling/)⁸ doesn’t belongs to any application layer, so I created a separate sub-package “loggerfactory” for it. It also has a “logger” sub-package to define logging interface. I explain everything in this package in my article “[Application Container](https://jfeng45.github.io/posts/application_container/)”⁹.
+Under the top level, “container.go” defines the container interface, and the implementation file “serviceContainer.go” is in “servicecontainer” package. It is the entry point or this package, which glues other code in this folder together. “registrationFactory.go” in “usecasefactory” sub-package and other factories using factory method pattern to create structs. [Logging](https://jfeng45.github.io/en/posts/go_logging_and_error_handling/)⁸ doesn’t belongs to any application layer, so I created a separate sub-package “loggerfactory” for it. It also has a “logger” sub-package to define logging interface. I explain everything in this package in my article “[Application Container](https://jfeng45.github.io/en/posts/application_container/)”⁹.
 
 **dataservice:**
 
@@ -149,7 +149,7 @@ The complete code is in [github](https://github.com/jfeng45/servicetmpl): https:
 
 ## Other articles:
 
-Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/posts/clean_architecture_with_go/)”.
+Please read the rest of the articles in this series in “[Go Microservice with Clean Architecture](https://jfeng45.github.io/en/posts/clean_architecture_with_go/)”.
 
 ## Reference:
 
@@ -175,10 +175,10 @@ Please read the rest of the articles in this series in “[Go Microservice with 
 (https://talks.golang.org/2012/splash.article)
 
 [8][Go Microservice with Clean Architecture: Application Logging]
-(https://jfeng45.github.io/posts/go_logging_and_error_handling/)
+(https://jfeng45.github.io/en/posts/go_logging_and_error_handling/)
 
 [9][Go Microservice with Clean Architecture: Application Container]
-(https://jfeng45.github.io/posts/application_container/)
+(https://jfeng45.github.io/en/posts/application_container/)
 
 [10][Practical Go: Real world advice for writing maintainable Go programs]
 (https://dave.cheney.net/practical-go/presentations/qcon-china.html)
