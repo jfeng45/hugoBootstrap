@@ -1,5 +1,8 @@
 # Bootstrap theme for "Software Craftsman" site 
 
+Other language: 
+### **[中文](README.zh.md)**
+
 This is my blog site. I use Hugo with [Bootstrap theme](https://github.com/Xzya/hugo-bootstrap). I did some enhancement to the Bootstrap theme to provide additional functionalities I needed. The following is them: 
 
 * Added support for user comments with [Disqus](https://disqus.com/)

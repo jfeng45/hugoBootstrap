@@ -7,6 +7,7 @@ languageCode = "zh-Hans"
 defaultContentLanguage = "zh"
 hasCJKLanguage = true
 DisqusShortname = "jfeng45"
+googleAnalytics = "UA-145409684-1"
 
 # Pagination =
 paginate = 5
