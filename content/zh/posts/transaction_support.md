@@ -1,5 +1,5 @@
 ---
-title: "清晰架构（Clean Atchitecture）的Go微服务: 事物管理"
+title: "清晰架构（Clean Architecture）的Go微服务: 事物管理"
 shortTitle: "事物管理"
 date: "2019-07-24"
 draft: false

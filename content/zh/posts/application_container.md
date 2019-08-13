@@ -1,5 +1,5 @@
 ---
-title: "清晰架构（Clean Atchitecture）的Go微服务: 程序容器（Application Container）"
+title: "清晰架构（Clean Architecture）的Go微服务: 程序容器（Application Container）"
 shortTitle: "程序容器"
 date: 2019-07-29
 draft: false
@@ -13,7 +13,7 @@ categories: ["Go微服务"]
 description: "程序容器（Application Container）负责创建具体类型并将它们注入每个函数。 它是本程序中最复杂的部分"
 
 ---
-清晰架构（Clean Atchitecture）的一个理念是隔离程序的框架，使框架不会接管你的应用程序，而是由你决定何时何地使用它们。在本程序中，我特意不在开始时使用任何框架，因此我可以更好地控制程序结构。只有在整个程序结构布局完成之后，我才会考虑用某些库替换本程序的某些组件。这样，引入的框架或第三方库的影响就会被正确的依赖关系所隔离。目前，除了logger，数据库，gRPC和Protobuf（这是无法避免的）之外，我只使用了两个第三方库[ozzo-validation](https://github.com/go-ozzo/ozzo-validation)¹和[YAML](https://github.com/go-yaml/yaml/tree/v2.2.2)²，而其他所有库都是Go的标准库。
+清晰架构（Clean Architecture）的一个理念是隔离程序的框架，使框架不会接管你的应用程序，而是由你决定何时何地使用它们。在本程序中，我特意不在开始时使用任何框架，因此我可以更好地控制程序结构。只有在整个程序结构布局完成之后，我才会考虑用某些库替换本程序的某些组件。这样，引入的框架或第三方库的影响就会被正确的依赖关系所隔离。目前，除了logger，数据库，gRPC和Protobuf（这是无法避免的）之外，我只使用了两个第三方库[ozzo-validation](https://github.com/go-ozzo/ozzo-validation)¹和[YAML](https://github.com/go-yaml/yaml/tree/v2.2.2)²，而其他所有库都是Go的标准库。
 
 你可以使用本程序作为构建应用程序的基础。你可能会问，那么本框架岂不是要接管整个应用程序吗？是的。但事实是，无论是你自建框架还是引进第三方框架，你都需要一个基本框架作为构建应用程序的基础。该基础需要具有正确的依赖性和可靠的设计，然后你可以决定是否引入其他库。你当然可以自己建立一个框架，但你最终可能会花费大量的时间和精力来完善它。你也可以使用本程序作为起点，而不是构建自己的项目，从而为你节省大量时间和精力。
 

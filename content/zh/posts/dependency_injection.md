@@ -1,5 +1,5 @@
 ---
-title: "清晰架构（Clean Atchitecture）的Go微服务: 依赖注入（Dependency Injection）"
+title: "清晰架构（Clean Architecture）的Go微服务: 依赖注入（Dependency Injection）"
 shortTitle: "依赖注入"
 date: 2019-07-29
 draft: false
@@ -14,7 +14,7 @@ description: "程序容器使用依赖注入创建具体类型并将它们注入
 
 ---
 
-在清晰架构（Clean Atchitecture）中，应用程序的每一层（用例，数据服务和域模型）仅依赖于其他层的接口而不是具体类型。 在运行时，[程序容器](https://jfeng45.github.io/posts/application_container/)¹负责创建具体类型并将它们注入到每个函数中，它使用的技术称为[依赖注入](https://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection)²。 以下是要求。
+在清晰架构（Clean Architecture）中，应用程序的每一层（用例，数据服务和域模型）仅依赖于其他层的接口而不是具体类型。 在运行时，[程序容器](https://jfeng45.github.io/posts/application_container/)¹负责创建具体类型并将它们注入到每个函数中，它使用的技术称为[依赖注入](https://www.martinfowler.com/articles/injection.html#FormsOfDependencyInjection)²。 以下是要求。
 
 **容器包的依赖关系:**
 
