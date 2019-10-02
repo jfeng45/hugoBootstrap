@@ -6,7 +6,6 @@ draft: false
 tags: ["Golang", "Grpc", "清晰架构", "微服务", "程序结构"]
 categories: ["Go微服务"]
 
-# canonicalUrl: "https://medium.com/@jfeng45/go-micro-service-with-clean-architecture-application-layout-e6216dbb835a"
 description: '“标准Go项目结构”不适合Go微服务gRPC项目。 本文使用一个真正的应用程序来展示什么是好的微服务应用程序结构及其背后的原因。'
 
 ---

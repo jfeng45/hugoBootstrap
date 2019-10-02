@@ -8,8 +8,6 @@ categories: ["Go Microservice"]
 tags: ["Golang", "Grpc", "清晰架构", "程序容器"]
 categories: ["Go微服务"]
 
-#canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-application-container-477cc3a11e77"
-
 description: "程序容器（Application Container）负责创建具体类型并将它们注入每个函数。 它是本程序中最复杂的部分"
 
 ---

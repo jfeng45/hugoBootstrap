@@ -2,12 +2,10 @@
 title: "清晰架构（Clean Architecture）的Go微服务"
 shortTitle: "Go微服务系列(*****)"
 
-date: 2019-07-22
+date: 2019-08-22
 draft: false
 tags: ["Golang", "Grpc", "清晰架构", “微服务”]
 categories: ["Go微服务"]
-
-# canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-a08fa916a5db"
 
 description: “我写了一系列关于用清晰架构（Clean Architecture）和SOLID设计Go Microservice和gRPC 的文章。它讨论了应用程序设计，应用程序布局和项目结构，日志记录，错误处理，事务管理，应用程序容器（Application Container）和依赖注入（Dependency Injection）。“ 
 ---
@@ -39,7 +37,9 @@ description: “我写了一系列关于用清晰架构（Clean Architecture）�
 
 1. [清晰架构（Clean Architecture）的Go微服务: 依赖注入（Dependency Injection）](https://jfeng45.github.io/posts/dependency_injection/)
 
-1. 清晰架构（Clean Architecture）的Go微服务: 服务的健壮性
+1. [Go微服务全链路跟踪详解](https://jfeng45.github.io/posts/go_opentracing/)
+
+1. [Go微服务容错与韧性（Service Resilience)](https://jfeng45.github.io/posts/go_service_resilience/)
 
 ##### **源程序:**
 

@@ -9,7 +9,6 @@ categories: ["Go Microservice"]
 tags: ["Golang", "清晰架构", "事物管理"]
 categories: ["Go微服务"]
 
-# canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-transaction-support-61eb0f886a36"
 description: "Go中的业务级事务管理系统，它完成了声明式事务的大部分功能。"
 
 ---

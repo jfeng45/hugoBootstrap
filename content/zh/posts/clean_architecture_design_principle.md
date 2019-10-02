@@ -6,7 +6,6 @@ draft: false
 tags: ["Golang", "清晰架构"]
 categories: ["Go微服务"]
 
-# canonicalUrl: "https://medium.com/@jfeng45/go-micro-service-with-clean-architecture-design-principle-118d2eeef1e6"
 description: "我使用Spring的基于接口的编程和依赖注入（Dependency Injection）来实现Bob Martin的清晰架构（Clean Architecture），并遵循了Go的简单编程风格。"
 
 ---

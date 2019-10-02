@@ -8,8 +8,6 @@ tags: ["Golang", "依赖注入", "清晰架构", "程序容器"]
 categories: ["Go微服务"]
 
 
-#canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-dependency-injection-82cbd3ecb9f3"
-
 description: "程序容器使用依赖注入创建具体类型并将它们注入每个函数。 在它内部使用工厂方法模式。"
 
 ---

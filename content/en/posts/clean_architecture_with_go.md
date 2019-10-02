@@ -2,7 +2,7 @@
 title: "Go Microservice with Clean Architecture"
 shortTitle: "Go Microservice Series(*****)"
 
-date: 2019-07-22
+date: 2019-08-22
 draft: false
 tags: ["Golang", "Grpc", "Clean Architecture", "Microservice"]
 categories: ["Go Microservice"]
@@ -42,7 +42,9 @@ You don’t need to read articles in the following order. If you are familiar wi
 
 1. [Go Microservice with Clean architecture: Dependency Injection](https://jfeng45.github.io/en/posts/dependency_injection/)
 
-1. Go Microservice with Clean architecture: Robust Service
+1. [How to Do Tracing in Go Microservice?](https://jfeng45.github.io/en/posts/go_opentracing/)
+
+1. [Service Resilience in Go Microservice](https://jfeng45.github.io/en/posts/go_service_resilience/)
 
 ## Source Code:
 

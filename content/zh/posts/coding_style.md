@@ -7,8 +7,6 @@ draft: false
 tags: ["Golang", "清晰架构",  "编码风格"]
 categories: ["Go微服务"]
 
-# canonicalUrl: "https://medium.com/@jfeng45/go-micro-service-with-clean-architecture-coding-style-a4da35a27d90"
-
 description: "编码风格对于编程高效至关重要。 良好的命名使代码实现自我解释。 它包括三个部分：程序结构，编码规则和风格，命名约定"
 
 ---

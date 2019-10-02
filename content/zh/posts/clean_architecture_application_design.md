@@ -8,8 +8,6 @@ tags: ["Golang", "Grpc", "清晰架构"]
 categories: ["Go微服务"]
 
 
-# canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-application-design-68f48802c8f"
-
 description: "描述了Go微服务gRPC项目的清晰架构设计，以及该项目的三个业务层。 它还谈到了这个项目与清晰架构（Clean Architecture）不同的两个地方"
 
 ---

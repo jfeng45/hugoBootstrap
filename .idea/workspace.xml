@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="de1a86cc-0804-4fb5-98f0-95ce3d1d3ddd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/introduction.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/posts/clean_architecture_with_go.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/posts/clean_architecture_with_go.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/introduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/introduction.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/zh/posts/application_container.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/application_container.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/posts/clean_architecture_application_design.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/clean_architecture_application_design.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/posts/clean_architecture_design_principle.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/clean_architecture_design_principle.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/posts/clean_architecture_with_go.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/clean_architecture_with_go.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/posts/coding_style.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/coding_style.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/zh/posts/dependency_injection.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/dependency_injection.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/posts/go_logging_and_error_handling.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/go_logging_and_error_handling.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/zh/posts/go_microservice_application_layout.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/go_microservice_application_layout.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/zh/posts/transaction_support.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/zh/posts/transaction_support.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,20 +25,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.toml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/content/zh/posts/go_service_resilience.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="153">
-                <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+              <first_editor relative-caret-position="144">
+                <caret line="392" column="8" selection-start-line="392" selection-start-column="8" selection-end-line="392" selection-end-column="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -37,11 +37,71 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.zh.md">
+        <entry file="file://$PROJECT_DIR$/content/en/introduction.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="272">
-                <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <first_editor relative-caret-position="68">
+                <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/en/posts/clean_architecture_with_go.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="223">
+                <caret line="44" selection-start-line="44" selection-end-line="46" selection-end-column="101" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/zh/posts/clean_architecture_with_go.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="390">
+                <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/zh/posts/go_opentracing.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="697">
+                <caret line="41" column="2" selection-start-line="41" selection-end-line="41" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/zh/posts/service_calling_each_other.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="102">
+                <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/zh/introduction.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="289">
+                <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="57" />
               </first_editor>
               <second_editor />
             </state>
@@ -59,17 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>truncate</find>
-      <find>short_title</find>
-      <find>software</find>
-      <find>&lt;h2 class=&quot;blog-post-title&quot;</find>
-      <find>Name for Types:</find>
-      <find>Wire</find>
-      <find>mediu</find>
-      <find>backToTop</find>
-      <find>name</find>
-      <find>title</find>
-      <find>Menus</find>
       <find>i18n</find>
       <find>canonicalUrl</find>
       <find>language</find>
@@ -87,15 +136,29 @@
       <find>disqus</find>
       <find>googleAnalytics</find>
       <find>Schema.org</find>
-      <find>您</find>
       <find>Atchitecture</find>
+      <find>map</find>
+      <find>）</find>
+      <find>您</find>
+      <find>媒介</find>
+      <find>date</find>
+      <find>GO</find>
+      <find>Timeout</find>
+      <find>Retry</find>
+      <find>load o</find>
+      <find>while leave</find>
+      <find>microservices</find>
+      <find>**</find>
     </findStrings>
     <replaceStrings>
       <replace>shortTitle</replace>
       <replace>zh</replace>
       <replace>https://jfeng45.github.io/en/posts/</replace>
-      <replace>你</replace>
       <replace>Architecture</replace>
+      <replace>)</replace>
+      <replace>(</replace>
+      <replace>你</replace>
+      <replace>Microservices</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\jin\jfeng45</dir>
@@ -110,12 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/themes/hugo-bootstrap/layouts/_default/taxonomy.html" />
-        <option value="$PROJECT_DIR$/themes/hugo-bootstrap/layouts/partials/recent.html" />
-        <option value="$PROJECT_DIR$/themes/hugo-bootstrap/layouts/_default/summary.html" />
-        <option value="$PROJECT_DIR$/content/en/posts/application_ayout.md" />
-        <option value="$PROJECT_DIR$/content/en/posts/logging.md" />
-        <option value="$PROJECT_DIR$/content/en/posts/application_layout.md" />
         <option value="$PROJECT_DIR$/content/en/posts/go_microserice_with_clean_architecture.md" />
         <option value="$PROJECT_DIR$/content/en/posts/application_logging.md" />
         <option value="$PROJECT_DIR$/content/en/project/note-1.md" />
@@ -138,36 +195,42 @@
         <option value="$PROJECT_DIR$/content/en/posts/clean_architecture_application_design.md" />
         <option value="$PROJECT_DIR$/content/zh/posts/temp.md" />
         <option value="$PROJECT_DIR$/content/en/posts/coding_style.md" />
-        <option value="$PROJECT_DIR$/content/zh/posts/coding_style.md" />
-        <option value="$PROJECT_DIR$/content/zh/posts/clean_architecture_application_design.md" />
-        <option value="$PROJECT_DIR$/content/zh/posts/transaction_support.md" />
         <option value="$PROJECT_DIR$/content/en/posts/application_container.md" />
-        <option value="$PROJECT_DIR$/content/zh/posts/application_container.md" />
         <option value="$PROJECT_DIR$/content/en/posts/dependency_injection.md" />
-        <option value="$PROJECT_DIR$/content/zh/posts/dependency_injection.md" />
         <option value="$PROJECT_DIR$/content/en/introducction.md" />
         <option value="$PROJECT_DIR$/themes/hugo-bootstrap/layouts/_default/introlayout.html" />
         <option value="$PROJECT_DIR$/themes/hugo-bootstrap/layouts/partials/post-date.html" />
-        <option value="$PROJECT_DIR$/content/zh/posts/clean_architecture_with_go.md" />
-        <option value="$PROJECT_DIR$/content/en/posts/clean_architecture_with_go.md" />
-        <option value="$PROJECT_DIR$/content/zh/introduction.md" />
-        <option value="$PROJECT_DIR$/content/en/introduction.md" />
         <option value="$PROJECT_DIR$/content/en/project/go-microservice-template.md" />
-        <option value="$PROJECT_DIR$/content/zh/posts/go_logging_and_error_handling.md" />
-        <option value="$PROJECT_DIR$/content/zh/posts/clean_architecture_design_principle.md" />
-        <option value="$PROJECT_DIR$/content/zh/posts/go_microservice_application_layout.md" />
         <option value="$PROJECT_DIR$/themes/hugo-bootstrap/layouts/partials/disqus.html" />
         <option value="$PROJECT_DIR$/themes/hugo-bootstrap/layouts/_default/single.html" />
         <option value="$PROJECT_DIR$/config.toml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/README.zh.md" />
+        <option value="$PROJECT_DIR$/../blog/mediumDraft/go_service_resilience.md" />
+        <option value="$PROJECT_DIR$/content/en/posts/go_service_resilience.md" />
+        <option value="$PROJECT_DIR$/content/en/posts/go_opentracing.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/application_container.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/clean_architecture_application_design.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/clean_architecture_design_principle.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/coding_style.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/dependency_injection.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/go_logging_and_error_handling.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/go_microservice_application_layout.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/transaction_support.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/service_calling_each_other.md" />
+        <option value="$PROJECT_DIR$/content/zh/introduction.md" />
+        <option value="$PROJECT_DIR$/content/en/introduction.md" />
+        <option value="$PROJECT_DIR$/content/en/posts/clean_architecture_with_go.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/clean_architecture_with_go.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/go_service_resilience.md" />
+        <option value="$PROJECT_DIR$/content/zh/posts/go_opentracing.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="19" />
-    <option name="y" value="8" />
-    <option name="width" value="1322" />
+    <option name="x" value="17" />
+    <option name="y" value="5" />
+    <option name="width" value="1344" />
     <option name="height" value="724" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -191,6 +254,39 @@
             <path>
               <item name="jfeng45" type="b2602c69:ProjectViewProjectNode" />
               <item name="jfeng45" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfeng45" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfeng45" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfeng45" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfeng45" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="zh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfeng45" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfeng45" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="zh" type="462c0819:PsiDirectoryNode" />
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfeng45" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfeng45" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="zh" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jfeng45" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jfeng45" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -207,17 +303,18 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/content/en/posts" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\jin\jfeng45\content\en\posts" />
+      <recent name="C:\jin\jfeng45\content\zh\posts" />
       <recent name="C:\jin\jfeng45" />
       <recent name="C:\jin\jfeng45\content\zh" />
       <recent name="C:\jin\jfeng45\content\en" />
-      <recent name="C:\jin\jfeng45\content\zh\posts" />
-      <recent name="C:\jin\jfeng45\content\en\posts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -233,9 +330,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="2" width="1322" height="724" extended-state="0" />
+    <frame x="55" y="18" width="1344" height="724" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18779714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21417445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -249,7 +347,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.11908646" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.122349106" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -260,84 +358,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/hugo-bootstrap/layouts/project/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-bootstrap/layouts/partials/post-title.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/en/posts/transaction_support.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="392">
-            <caret line="387" column="63" selection-start-line="387" selection-start-column="63" selection-end-line="387" selection-end-column="63" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/project/go-microservice-template.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="34" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="34" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/project/go-grpc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-bootstrap/theme.toml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-bootstrap/layouts/partials/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-bootstrap/i18n/es.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/hugo-bootstrap/layouts/partials/taxonomies.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/hugo-bootstrap/i18n/zh.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/en/posts/go_microservice_application_layout.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="145">
-            <caret line="72" column="147" selection-start-line="72" selection-start-column="147" selection-end-line="72" selection-end-column="147" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -372,36 +396,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/zh/posts/temp.md" />
-    <entry file="file://$PROJECT_DIR$/content/zh/posts/transaction_support.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/posts/coding_style.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/posts/clean_architecture_application_design.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/en/posts/coding_style.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -424,16 +418,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/content/en/_index.md" />
     <entry file="file://$PROJECT_DIR$/content/en/introducction.md" />
-    <entry file="file://$PROJECT_DIR$/content/en/posts/dependency_injection.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="203">
-            <caret line="265" column="124" selection-start-line="265" selection-start-column="98" selection-end-line="265" selection-end-column="124" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/hugo-bootstrap/layouts/partials/related.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -458,56 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/posts/dependency_injection.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="5083">
-            <caret line="299" column="10" selection-start-line="299" selection-start-column="10" selection-end-line="299" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/posts/application_container.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="119">
-            <caret line="7" column="39" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="39" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/posts/clean_architecture_with_go.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/en/posts/clean_architecture_with_go.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="476">
-            <caret line="28" column="100" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="100" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/posts/go_microservice_application_layout.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="230">
-            <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/en/project/go-grpc.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -518,44 +452,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/posts/go_logging_and_error_handling.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/posts/clean_architecture_design_principle.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="14" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/en/project/go-microservice-template.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="85">
             <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/en/introduction.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           </first_editor>
           <second_editor />
         </state>
@@ -616,20 +520,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/zh/introduction.md">
+    <entry file="file://$PROJECT_DIR$/config.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+    <entry file="file://$PROJECT_DIR$/../blog/mediumDraft/go_service_resilience.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="456">
+            <caret line="374" column="92" selection-start-line="374" selection-start-column="92" selection-end-line="374" selection-end-column="92" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/en/posts/dependency_injection.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="816">
+            <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/en/posts/transaction_support.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="11" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -643,11 +577,197 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/content/en/posts/go_microservice_application_layout.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1156">
+            <caret line="68" selection-start-line="68" selection-end-line="68" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/en/posts/go_service_resilience.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="46" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/en/posts/go_opentracing.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/application_container.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="170">
+            <caret line="10" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/clean_architecture_application_design.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="170">
+            <caret line="10" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/clean_architecture_design_principle.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/coding_style.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="153">
-            <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+            <caret line="9" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/dependency_injection.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="170">
+            <caret line="10" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/project/go-microservice-template.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/project/go-grpc.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/transaction_support.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="187">
+            <caret line="11" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/go_logging_and_error_handling.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="7" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/service_calling_each_other.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/go_microservice_application_layout.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/introduction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="289">
+            <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="57" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/en/introduction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="68">
+            <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/en/posts/clean_architecture_with_go.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="223">
+            <caret line="44" selection-start-line="44" selection-end-line="46" selection-end-column="101" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/clean_architecture_with_go.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="390">
+            <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/go_service_resilience.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="392" column="8" selection-start-line="392" selection-start-column="8" selection-end-line="392" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/zh/posts/go_opentracing.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="697">
+            <caret line="41" column="2" selection-start-line="41" selection-end-line="41" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>

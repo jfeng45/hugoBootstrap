@@ -14,5 +14,6 @@ description: "Introduction to Software Craftsman."
 
 #### Projects:
 - [Go Microservice Template with Clean Architecture](https://github.com/jfeng45/servicetmpl)
+- [Go Microservice Tracing and Service Resilience](https://github.com/jfeng45/grpcservice)
 - [Go gRPC Project](https://github.com/jfeng45/reservegrpc)
     

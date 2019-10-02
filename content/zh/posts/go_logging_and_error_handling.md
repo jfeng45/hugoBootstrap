@@ -6,7 +6,6 @@ draft: false
 tags: ["Golang", "日志管理", "错误处理", "微服务"]
 categories: ["Go微服务"]
 
-# canonicalUrl: "https://medium.com/@jfeng45/go-microservice-with-clean-architecture-application-logging-b43dc5839bce"
 description: “描述了Go Microservice 和gRPC项目中日志管理和错误处理的最佳实践，并比较了两种不同的
              记录库ZAP和Logrus。“
 
